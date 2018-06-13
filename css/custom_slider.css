@@ -29,7 +29,7 @@
 	background: #cbbfae url(../images/nav.png) no-repeat top left;
 	position: absolute;
 	top: 50%;
-	left: 2px;
+	left: 2%;
 	text-indent: -9000px;
 	cursor: pointer;
 	margin-top: -21px;
@@ -40,7 +40,7 @@
 
 .nav-arrows a:first-child{
 	left: auto;
-	right: 2px;
+	right: 2%;
 	background-position: top right;
 }
 
@@ -66,8 +66,8 @@
 	margin: 3px;
 	background: #cbbfae;
 	cursor: pointer;
-	box-shadow: 
-		0 1px 1px rgba(255,255,255,0.6), 
+	box-shadow:
+		0 1px 1px rgba(255,255,255,0.6),
 		inset 0 1px 1px rgba(0,0,0,0.1);
 }
 

@@ -94,3 +94,8 @@
 	-ms-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 }
+/*@media screen and (max-width: 1200px){*/
+	/*.sb-slider{*/
+		/*width: 80%;*/
+	/*}*/
+/*}*/
