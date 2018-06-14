@@ -1,3 +1,51 @@
+@-webkit-keyframes spinner {
+  100% {
+    transform: rotate(3600deg);
+  }
+}
+@-moz-keyframes spinner {
+  100% {
+    transform: rotate(3600deg);
+  }
+}
+@-ms-keyframes spinner {
+  100% {
+    transform: rotate(3600deg);
+  }
+}
+@keyframes spinner {
+  100% {
+    transform: rotate(3600deg);
+  }
+}
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fcfcfc;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.preloader .back {
+  background-size: contain;
+  display: inline-block;
+  position: relative;
+  animation: spinner 45s alternate infinite linear;
+  transform-origin: calc(50% + 15px) calc(50% - 5px);
+  width: 400px;
+  height: 400px;
+}
+.preloader .front {
+  position: absolute;
+  z-index: 1001;
+  display: block;
+  transform: translateX(144px);
+}
+
 body {
   position: relative;
 }
@@ -5,6 +53,7 @@ body {
 .navbar {
   margin-right: 30px;
   margin-left: 20px;
+  padding-top: 0;
 }
 .navbar .header_info {
   width: 100%;
@@ -226,6 +275,189 @@ body {
   font-family: "PF Handbook Pro";
   font-size: 17px;
   letter-spacing: 0.23px;
+}
+
+.complexes_body_top {
+  padding: 30px;
+}
+.complexes_body_top .header_block {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.complexes_body_top .header_block h1 {
+  color: #224676;
+  font-family: "Bandera Pro";
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+}
+.complexes_body_top .header_block h1::after {
+  display: block;
+  content: "";
+  height: 4px;
+  background-color: #224676;
+  width: 58px;
+  transform: translateY(10px);
+}
+.complexes_body_main {
+  padding-right: 95px;
+}
+.complexes_body_main .sidebar .accordion .card {
+  border: none;
+}
+.complexes_body_main .sidebar .accordion .card .card-header {
+  width: 100%;
+  position: relative;
+  padding: 0;
+  height: 75px;
+}
+.complexes_body_main .sidebar .accordion .card .card-header h5 {
+  padding: 0;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.complexes_body_main .sidebar .accordion .card .card-header h5 button {
+  color: #ffffff;
+  white-space: normal;
+  text-align: left;
+  font-family: "Bandera Pro";
+  width: 100%;
+  height: 75px;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+.complexes_body_main .sidebar .accordion .card .card-header:hover button {
+  background-color: rgba(255, 255, 255, 0.37);
+}
+.complexes_body_main .sidebar .accordion .card .card-body {
+  width: 100%;
+  border: 1px solid #e8e8e8;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 15%;
+  margin-right: 0;
+}
+.complexes_body_main .sidebar .accordion .card .card-body h6 {
+  color: #0e2443;
+  font-family: "Bandera Pro";
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.complexes_body_main .sidebar .accordion .card .show, .complexes_body_main .sidebar .accordion .card .collapse, .complexes_body_main .sidebar .accordion .card .collapsing {
+  padding-left: 10%;
+}
+.complexes_body_main .sidebar .accordion .card #headingOne {
+  background: linear-gradient(to bottom, #193861, #08255d);
+}
+.complexes_body_main .sidebar .accordion .card #headingTwo {
+  background: linear-gradient(to bottom, #1c4171, #08255d);
+}
+.complexes_body_main .sidebar .accordion .card #headingThree {
+  background: linear-gradient(to bottom, #275187, #1c418d);
+}
+.complexes_body_main .sidebar .accordion .card #headingFour {
+  background: linear-gradient(to bottom, #305d97, #1c418d);
+}
+.complexes_body_main .sidebar .accordion .card #headingFive {
+  background: linear-gradient(to bottom, #3e6eab, #1c418d);
+}
+.complexes_body_main .sidebar .accordion .card #headingSix {
+  background: linear-gradient(to bottom, #477bbd, #1c418d);
+}
+.complexes_body_main .content .video_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.04);
+  margin-bottom: 60px;
+}
+.complexes_body_main .content .video_wrap iframe {
+  width: 920px;
+  height: 520px;
+}
+.complexes_body_main .content .products_wrap_header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.complexes_body_main .content .products_wrap_header h2 {
+  color: #224676;
+  font-family: "Bandera Pro";
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+}
+.complexes_body_main .content .products_wrap_body .tabs_container {
+  padding: 10px;
+  margin-bottom: 80px;
+}
+.complexes_body_main .content .products_wrap_body .tabs_container .nav-tabs {
+  display: flex;
+  justify-content: space-between;
+}
+.complexes_body_main .content .products_wrap_body .tabs_container .nav-tabs a {
+  width: 33%;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+  padding: 25px 50px;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+.complexes_body_main .content .products_wrap_body .tabs_container .nav-tabs a h3 {
+  color: #696969;
+  font-size: 24px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  font-family: "Bandera Pro";
+}
+.complexes_body_main .content .products_wrap_body .tabs_container .nav-tabs a h3::after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 45px;
+  background-color: #696969;
+  transform: translateY(10px);
+}
+.complexes_body_main .content .products_wrap_body .tabs_container .nav-tabs a p {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  color: #696969;
+  font-family: "Bandera Pro";
+  font-size: 13px;
+  margin-top: 20px;
+}
+.complexes_body_main .content .products_wrap_body .tabs_container .nav-tabs a.active, .complexes_body_main .content .products_wrap_body .tabs_container .nav-tabs .show {
+  border: 3px solid #224676;
+  color: #224676;
+}
+.complexes_body_main .content .products_wrap_body .tabs_container .nav-tabs a.active h3, .complexes_body_main .content .products_wrap_body .tabs_container .nav-tabs a.active p, .complexes_body_main .content .products_wrap_body .tabs_container .nav-tabs .show h3, .complexes_body_main .content .products_wrap_body .tabs_container .nav-tabs .show p {
+  color: inherit;
+}
+.complexes_body_main .content .products_wrap_body .tabs_container .nav-tabs a.active h3::after, .complexes_body_main .content .products_wrap_body .tabs_container .nav-tabs .show h3::after {
+  background-color: #224676;
+}
+.complexes_body_main .content .products_wrap_body .content_container .tab-content .tab-pane h3 {
+  color: #082762;
+  font-family: "Bandera Pro";
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  margin-bottom: 40px;
+}
+.complexes_body_main .content .products_wrap_body .content_container .tab-content .tab-pane .current_tab_content p {
+  color: #0c2342;
+  font-family: "Bandera Pro";
+  font-size: 18px;
 }
 
 @media (max-width: 1200px) {
