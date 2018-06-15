@@ -593,6 +593,189 @@ body {
   text-transform: uppercase;
 }
 
+.articles_body_top {
+  margin-left: 75px;
+}
+.articles_body_top .logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.articles_body_top .banner {
+  background: url("../img/articles/banner.png");
+  height: 220px;
+  padding-left: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.articles_body_top .banner h1 {
+  font-family: "PF Handbook Pro";
+  color: #ffffff;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+}
+.articles_body_content {
+  margin: 80px 100px;
+}
+.articles_body_content .search_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.articles_body_content .search_wrap .line {
+  width: 30%;
+  height: 2px;
+  border-bottom: 1px solid;
+  background-color: #082762;
+  opacity: 0.07;
+}
+.articles_body_content .search_wrap form {
+  padding: 8px;
+  border: 1px solid #d3d3d3;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.28);
+  background-color: #e5e5e5;
+  width: 35%;
+}
+.articles_body_content .search_wrap form .input-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.articles_body_content .search_wrap form .input-group .input-group-prepend {
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+  width: 70%;
+}
+.articles_body_content .search_wrap form .input-group .input-group-prepend .input-group-text {
+  border: none;
+  background-color: #ffffff;
+  color: #9a9a9a;
+  font-size: 24px;
+  line-height: 24px;
+}
+.articles_body_content .search_wrap form .input-group .input-group-prepend .form-control {
+  border: none;
+  box-shadow: none;
+  color: rgba(143, 143, 143, 0.54);
+  font-family: "PF Handbook Pro";
+  font-size: 24px;
+  line-height: 24px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+.articles_body_content .search_wrap form .input-group button {
+  width: 28%;
+  background-color: #244b9c;
+  color: #ffffff;
+  text-shadow: 0 1px 0 rgba(231, 255, 191, 0.7);
+  font-family: "PF Handbook Pro";
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+.articles_body_content .articles_wrap {
+  margin-top: 80px;
+}
+.articles_body_content .articles_wrap .article {
+  display: flex;
+  justify-content: space-between;
+}
+.articles_body_content .articles_wrap .article_date {
+  height: 90px;
+  min-width: 90px;
+  background-color: #1c418d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+.articles_body_content .articles_wrap .article_date h4 {
+  text-align: center;
+  color: #ffffff;
+  font-family: "PF Handbook Pro";
+  font-size: 18px;
+  line-height: 17.75px;
+  letter-spacing: 2.4px;
+}
+.articles_body_content .articles_wrap .article_img {
+  position: relative;
+  min-width: 25%;
+  margin-right: 15px;
+}
+.articles_body_content .articles_wrap .article_img img {
+  width: 100%;
+  height: 100%;
+}
+.articles_body_content .articles_wrap .article_img .hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(21, 44, 90, 0.67);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.articles_body_content .articles_wrap .article_img .hover:hover {
+  opacity: 1;
+}
+.articles_body_content .articles_wrap .article_img .hover a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "PF Handbook Pro";
+  font-size: 24px;
+  line-height: 40px;
+}
+.articles_body_content .articles_wrap .article_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.articles_body_content .articles_wrap .article_info h3 {
+  color: #1945a1;
+  font-family: "PF Handbook Pro";
+  font-size: 36px;
+  line-height: 40px;
+}
+.articles_body_content .articles_wrap .article_info p {
+  font-family: "PF Handbook Pro";
+  color: #272829;
+  font-size: 20px;
+}
+.articles_body_content .articles_wrap .article_info a {
+  color: #1c418d;
+  text-align: center;
+  font-family: "PF Handbook Pro";
+  font-size: 24px;
+  padding-left: 15px;
+  text-decoration: underline;
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  transition: all 0.3s ease-in-out;
+}
+.articles_body_content .articles_wrap .article_info a div {
+  margin-left: 20px;
+  min-height: 100%;
+  min-width: 45px;
+  background-color: #1c418d;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none !important;
+}
+.articles_body_content .articles_wrap .article_info a:hover {
+  background-color: #1c418d;
+  color: #ffffff;
+}
+
 @media (max-width: 1650px) {
   .navbar .header_info p {
     font-size: 12px !important;
