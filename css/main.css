@@ -188,7 +188,7 @@ body {
   background-color: rgba(255, 255, 255, 0);
 }
 .index_body .slider_block .sb-description:hover {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0) !important;
 }
 .index_body .slider_block .sb-description h3 {
   font-size: 36px;
@@ -381,7 +381,7 @@ body {
   margin-bottom: 60px;
 }
 .complexes_body_main .content .video_wrap iframe {
-  width: 920px;
+  width: 100%;
   height: 520px;
 }
 .complexes_body_main .content .products_wrap_header {
@@ -459,8 +459,141 @@ body {
   font-family: "Bandera Pro";
   font-size: 18px;
 }
+.complexes_body_main .content .table_wrap {
+  margin-top: 80px;
+}
+.complexes_body_main .content .table_wrap_header h2 {
+  color: #224676;
+  font-family: "Bandera Pro";
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+}
+.complexes_body_main .content .table_wrap_header h2::after {
+  display: block;
+  content: "";
+  height: 4px;
+  background-color: #224676;
+  width: 58px;
+  transform: translateY(10px);
+}
+.complexes_body_main .content .table_wrap_body {
+  margin-top: 40px;
+}
+.complexes_body_main .content .table_wrap_body table {
+  border: 2px solid #cccccc;
+}
+.complexes_body_main .content .table_wrap_body table thead .main_table_header {
+  background-color: #2646aa;
+}
+.complexes_body_main .content .table_wrap_body table thead .main_table_header td {
+  text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+}
+.complexes_body_main .content .table_wrap_body table thead .sub_table_header {
+  background-color: #4875aa;
+}
+.complexes_body_main .content .table_wrap_body table thead .sub_table_header td {
+  text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+}
+.complexes_body_main .content .table_wrap_body table tbody tr td {
+  color: #474747;
+  font-family: "Gotham Pro";
+  font-size: 16px;
+  padding-left: 40px;
+  padding-right: 60px;
+  vertical-align: middle;
+}
+.complexes_body_main .content .table_wrap_body table tbody tr td:first-child {
+  width: 50%;
+}
+.complexes_body_main .content .table_wrap_body table tbody tr .big_cell {
+  background-color: #ffffff;
+}
+.complexes_body_main .content .table_wrap_body table tbody .table_footer {
+  background-color: #cccccc;
+}
+.complexes_body_main .content .table_wrap_body table tbody .table_footer td {
+  border: 1px solid #cccccc;
+}
+.complexes_body_main .content .diagram_wrap {
+  margin-top: 80px;
+}
+.complexes_body_main .content .diagram_wrap_header {
+  margin-bottom: 40px;
+}
+.complexes_body_main .content .diagram_wrap_header h2 {
+  color: #224676;
+  font-family: "Bandera Pro";
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+}
+.complexes_body_main .content .diagram_wrap_header h2::after {
+  display: block;
+  content: "";
+  height: 4px;
+  background-color: #224676;
+  width: 58px;
+  transform: translateY(10px);
+}
+.complexes_body_main .content .diagram_wrap_body {
+  margin-top: 80px;
+}
+.complexes_body_main .content .diagram_wrap_body .diagrams {
+  display: flex;
+  justify-content: space-between;
+}
+.complexes_body_main .content .diagram_wrap_body .diagrams .diagram img {
+  width: 100%;
+}
+.complexes_body_main .content .photo_wrap {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+.complexes_body_main .content .photo_wrap_header {
+  margin-bottom: 40px;
+}
+.complexes_body_main .content .photo_wrap_header h2 {
+  color: #224676;
+  font-family: "Bandera Pro";
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+}
+.complexes_body_main .content .photo_wrap_body .photo img {
+  width: 100%;
+}
+.complexes_body_main .content .photo_wrap_body .info {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+.complexes_body_main .content .photo_wrap_body .info a {
+  text-decoration: none;
+  width: 30%;
+  height: 60px;
+  background-color: #2861aa;
+  box-shadow: 3px 6px 10px 1px rgba(0, 0, 0, 0.27);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Bandera Pro";
+  letter-spacing: 2.06px;
+  line-height: 20.69px;
+  text-transform: uppercase;
+}
 
-@media (max-width: 1200px) {
+@media (max-width: 1650px) {
   .navbar .header_info p {
     font-size: 12px !important;
     margin-left: 8px;

@@ -91,7 +91,7 @@
         background-color: rgba(0, 0, 0, 0.04)
         margin-bottom: 60px
         iframe
-          width: 920px
+          width: 100%
           height: 520px
       .products_wrap
         &_header
@@ -162,3 +162,119 @@
                     color: #0c2342
                     font-family: "Bandera Pro"
                     font-size: 18px
+      .table_wrap
+        margin-top: 80px
+        &_header
+          h2
+            color: #224676
+            font-family: "Bandera Pro"
+            font-size: 24px
+            font-weight: 700
+            text-transform: uppercase
+            letter-spacing: 2.4px
+            &::after
+              display: block
+              content: ''
+              height: 4px
+              background-color: #224676
+              width: 58px
+              transform: translateY(10px)
+
+        &_body
+          margin-top: 40px
+          table
+            border: 2px solid #cccccc
+            thead
+              .main_table_header
+                background-color: #2646aa
+                td
+                  text-align: center
+                  color: #ffffff
+                  font-size: 24px
+              .sub_table_header
+                  background-color: #4875aa
+                  td
+                    text-align: center
+                    color: #ffffff
+                    font-size: 24px
+            tbody
+              tr
+                td
+                  color: #474747
+                  font-family: "Gotham Pro"
+                  font-size: 16px
+                  padding-left: 40px
+                  padding-right: 60px
+                  vertical-align: middle
+                td:first-child
+                  width: 50%
+                .big_cell
+                  background-color: #ffffff
+              .table_footer
+                background-color: #cccccc
+                td
+                  border: 1px solid #cccccc
+      .diagram_wrap
+        margin-top: 80px
+        &_header
+          margin-bottom: 40px
+          h2
+            color: #224676
+            font-family: "Bandera Pro"
+            font-size: 24px
+            font-weight: 700
+            text-transform: uppercase
+            letter-spacing: 2.4px
+            &::after
+              display: block
+              content: ''
+              height: 4px
+              background-color: #224676
+              width: 58px
+              transform: translateY(10px)
+        &_body
+          margin-top: 80px
+          .diagrams
+            display: flex
+            justify-content: space-between
+            .diagram
+              img
+                width: 100%
+      .photo_wrap
+        margin-top: 80px
+        margin-bottom: 100px
+        &_header
+          margin-bottom: 40px
+          h2
+            color: #224676
+            font-family: "Bandera Pro"
+            font-size: 24px
+            font-weight: 700
+            text-transform: uppercase
+            letter-spacing: 2.4px
+        &_body
+          .photo
+            img
+              width: 100%
+          .info
+            margin-top: 40px
+            display: flex
+            justify-content: flex-end
+            a
+              text-decoration: none
+              width: 30%
+              height: 60px
+              background-color: #2861aa
+              box-shadow: 3px 6px 10px 1px rgba(0, 0, 0, 0.27)
+              color: #ffffff
+              display: flex
+              align-items: center
+              justify-content: space-around
+              font-size: 24px
+              font-weight: bold
+              font-family: "Bandera Pro"
+              letter-spacing: 2.06px
+              line-height: 20.69px
+              text-transform: uppercase
+              //padding: 10px 15px
+
