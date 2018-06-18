@@ -75,6 +75,8 @@
       .article
         display: flex
         justify-content: space-between
+        padding: 60px 0
+        border-bottom: 1px solid  rgba(8, 39, 98, .13)
         &_date
           height: 90px
           min-width: 90px
@@ -131,29 +133,64 @@
             color: #272829
             font-size: 20px
           a
-            color: #1c418d
-            text-align: center
             font-family: "PF Handbook Pro"
             font-size: 24px
-            padding-left: 15px
-            text-decoration: underline
+            text-decoration: none
             display: flex
             justify-content: space-between
             width: 250px
-            transition: all .3s ease-in-out
-            div
-              margin-left: 20px
-              min-height: 100%
-              min-width: 45px
-              background-color: #1c418d
-              text-decoration: none
-              color: #ffffff
-              font-size: 20px
+            background-color: #1c418d
+            color: #ffffff
+            &:focus, .text:focus
+              box-shadow: none
+              border: none
+            .arrow
+              width: 20%
               display: flex
               justify-content: center
               align-items: center
-              text-decoration: none !important
+            .link_text
+              width: 80%
+              text-decoration: underline
+              padding-left: 5%
+              background-color: #ffffff
+              color: #1c418d
+              transition: all .3s ease-in-out
             &:hover
-              background-color: #1c418d
-              color: #ffffff
+              .link_text
+                background-color: #1c418d
+                color: #ffffff
+      .article:first-child
+        padding-top: 10px
+    .article_navigation_wrap
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-top: 60px
+      .navigate_block
+        display: flex
+        .navBtn
+          button
+            background-color: #1c418d
+            width: 34px
+            height: 34px
+            display: flex
+            justify-content: center
+            align-items: center
+            color: #ffffff
+            border-radius: 0
+        .nav_text
+          margin: 0 30px
+          display: flex
+          justify-content: center
+          align-items: center
+          font-family: "PF Handbook Pro"
+          color: #7c7c7c
+          font-size: 16px
+          text-transform: uppercase
+          letter-spacing: 1.27px
+        .disabledBtn
+          button
+            background-color: rgba(0, 0, 0, .32)
+
 
