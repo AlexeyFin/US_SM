@@ -1,0 +1,139 @@
+.gallery_body
+  &_top
+    margin-left: 75px
+    .logo
+      display: flex
+      align-items: center
+      height: 100%
+    .banner
+      background: url("../img/articles/banner.png")
+      height: 220px
+      padding-left: 40px
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      h1
+        font-family: "PF Handbook Pro"
+        color: #ffffff
+        font-size: 36px
+        text-transform: uppercase
+        letter-spacing: 2.7px
+  &_content
+    margin: 80px 100px
+    .categories
+      display: flex
+      justify-content: center
+      border-bottom: 1px solid rgba(8, 39, 98, .07)
+      button
+        box-sizing: border-box
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.24)
+        border: 1px solid rgba(255, 255, 255, 0.24)
+        border-radius: 0
+        background-color: #143981
+        color: #FFFFFF
+        &:first-child
+          border-radius: 6px 0 0 6px
+        &:last-child
+          border-radius: 0 6px 6px 0
+        &:hover
+          background-color: #082762
+    .gallery
+      margin: 50px 0
+      .row, .col-12, .col-lg-6, .col-lg-3
+        padding: 2px
+      .gallery_row
+        display: flex
+        .big_photo
+          position: relative
+          img
+            height: 100%
+          .hover_block
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            opacity: 0
+            background-color: #FFFFFF
+            transition: all .3s ease-in-out
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            text-decoration: none
+            h3
+              color: #1f1f1f
+              font-family: "PF Handbook Pro"
+              font-size: 30px
+              text-transform: uppercase
+              letter-spacing: 3px
+
+              &::after
+                display: block
+                content: ''
+                width: 90px
+                height: 2px
+                background-color: #1f1f1f
+                margin-left: calc(50% - 45px)
+                transform: translateY(15px)
+            p
+              color: #404040
+              margin-top: 50px
+              font-family: "PF Handbook Pro"
+              font-size: 24px
+              width: 70%
+          &:hover
+            .hover_block
+              opacity: .83
+        .dbl
+          display: flex
+          flex-direction: column
+          justify-content: space-between
+        img
+          width: 100%
+    .bottom_nav
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-bottom: 80px
+      margin-top: 60px
+      .counts
+        display: flex
+        justify-content: space-between
+        button
+          height: 46px
+          border: 1px solid #a8a8a8
+          background-color: #FFFFFF
+          display: flex
+          justify-content: center
+          align-items: center
+          margin: 6px
+          color: #a8a8a8
+          font-size: 20px
+        .active
+          background-color: #15429b
+          color: #FFFFFF
+        .dots
+          color: #6e6e6e
+          font-family: "Open Sans"
+          font-size: 20px
+          display: flex
+          justify-content: center
+          align-items: flex-end
+          padding-bottom: 3%
+
+      .arrow
+        button
+          width: 52px
+          height: 46px
+          background-color: #1c418d
+          color: #FFFFFF
+          display: flex
+          justify-content: center
+          align-items: center
+          margin: 15px
+          border-radius: 0
+          font-size: 20px
+        .disabled
+          background-color: #a9a9a9
+

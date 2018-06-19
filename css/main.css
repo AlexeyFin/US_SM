@@ -131,6 +131,9 @@ body {
   color: #2861aa;
   text-transform: none;
 }
+.navbar .navbar-nav .dropdown:hover::after {
+  transform: scale(0);
+}
 
 .index_body {
   padding-top: 20px;
@@ -575,7 +578,7 @@ body {
   display: flex;
   justify-content: flex-end;
 }
-.complexes_body_main .content .photo_wrap_body .info a {
+.complexes_body_main .content .photo_wrap_body .info button {
   text-decoration: none;
   width: 30%;
   height: 60px;
@@ -593,6 +596,121 @@ body {
   text-transform: uppercase;
 }
 
+.modal .modal-dialog {
+  max-width: 40%;
+}
+.modal .modal-content {
+  background: linear-gradient(-95deg, #082652 0%, #1c418d 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 25px;
+  position: relative;
+}
+.modal .modal-content .close {
+  position: absolute;
+  top: 0;
+  right: -7%;
+}
+.modal .modal-content .modal-header {
+  border: none;
+}
+.modal .modal-content .modal-header h3 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.modal .modal-content .modal-body {
+  width: 50%;
+  padding: 0;
+  margin-top: 30px;
+}
+.modal .modal-content .modal-body .input-group-prepend, .modal .modal-content .modal-body .input-group-text {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+.modal .modal-content .modal-body .input-group-prepend {
+  border-bottom: 1px solid #FFFFFF;
+}
+.modal .modal-content .modal-body .form-input {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom: 1px solid #FFFFFF;
+  color: #ffffff;
+  font-size: 24px;
+}
+.modal .modal-content .modal-body .form-input:focus {
+  box-shadow: none;
+}
+.modal .modal-content .modal-body input::-moz-placeholder {
+  color: #FFFFFF;
+}
+.modal .modal-content .modal-body input::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+.modal .modal-content .modal-body .userCommentLabel {
+  display: flex;
+  padding-left: 12px;
+  align-items: center;
+}
+.modal .modal-content .modal-body .userCommentLabel img {
+  width: 23px;
+  height: 20px;
+  margin-right: 15px;
+}
+.modal .modal-content .modal-body .userCommentLabel p {
+  color: #ffffff;
+  font-size: 24px;
+  margin: 0;
+}
+.modal .modal-content .modal-body textarea {
+  width: 100%;
+  box-shadow: inset 5px 5px 15px 1px rgba(0, 0, 0, 0.28);
+  border: 1px solid #ffffff;
+  background-color: #e8e8e8 !important;
+  border-radius: 0;
+  margin-bottom: 90px;
+}
+.modal .modal-content .modal-body textarea::-moz-placeholder {
+  font-size: 18px;
+  font-style: italic;
+}
+.modal .modal-content .modal-body textarea::-webkit-input-placeholder {
+  font-size: 18px;
+  font-style: italic;
+}
+.modal .modal-content .modal-body button {
+  width: 100%;
+  height: 70px;
+  background-color: #ffd7a4;
+  color: #2c365a;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+.modal .modal-content .modal-footer {
+  border: none;
+  width: 70%;
+}
+.modal .modal-content .modal-footer p {
+  width: 100%;
+  text-align: center;
+  font-family: "Gotham Pro";
+  font-size: 16px;
+  color: #ffffff;
+}
+
+@media (max-width: 1650px) {
+  .complexes_body_main .sidebar .accordion .card .card-header h5 button {
+    font-size: 15px;
+  }
+  .complexes_body_main .sidebar .accordion .card .card-body h6 {
+    font-size: 14px;
+  }
+}
 .articles_body_top {
   margin-left: 75px;
 }
@@ -1023,6 +1141,169 @@ body {
 .contacts_body_content .contact_map_wrap #map {
   width: 100%;
   height: 400px;
+}
+
+.gallery_body_top {
+  margin-left: 75px;
+}
+.gallery_body_top .logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.gallery_body_top .banner {
+  background: url("../img/articles/banner.png");
+  height: 220px;
+  padding-left: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.gallery_body_top .banner h1 {
+  font-family: "PF Handbook Pro";
+  color: #ffffff;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+}
+.gallery_body_content {
+  margin: 80px 100px;
+}
+.gallery_body_content .categories {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(8, 39, 98, 0.07);
+}
+.gallery_body_content .categories button {
+  box-sizing: border-box;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.24);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 0;
+  background-color: #143981;
+  color: #FFFFFF;
+}
+.gallery_body_content .categories button:first-child {
+  border-radius: 6px 0 0 6px;
+}
+.gallery_body_content .categories button:last-child {
+  border-radius: 0 6px 6px 0;
+}
+.gallery_body_content .categories button:hover {
+  background-color: #082762;
+}
+.gallery_body_content .gallery {
+  margin: 50px 0;
+}
+.gallery_body_content .gallery .row, .gallery_body_content .gallery .col-12, .gallery_body_content .gallery .col-lg-6, .gallery_body_content .gallery .col-lg-3 {
+  padding: 2px;
+}
+.gallery_body_content .gallery .gallery_row {
+  display: flex;
+}
+.gallery_body_content .gallery .gallery_row .big_photo {
+  position: relative;
+}
+.gallery_body_content .gallery .gallery_row .big_photo img {
+  height: 100%;
+}
+.gallery_body_content .gallery .gallery_row .big_photo .hover_block {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: #FFFFFF;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.gallery_body_content .gallery .gallery_row .big_photo .hover_block h3 {
+  color: #1f1f1f;
+  font-family: "PF Handbook Pro";
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.gallery_body_content .gallery .gallery_row .big_photo .hover_block h3::after {
+  display: block;
+  content: "";
+  width: 90px;
+  height: 2px;
+  background-color: #1f1f1f;
+  margin-left: calc(50% - 45px);
+  transform: translateY(15px);
+}
+.gallery_body_content .gallery .gallery_row .big_photo .hover_block p {
+  color: #404040;
+  margin-top: 50px;
+  font-family: "PF Handbook Pro";
+  font-size: 24px;
+  width: 70%;
+}
+.gallery_body_content .gallery .gallery_row .big_photo:hover .hover_block {
+  opacity: 0.83;
+}
+.gallery_body_content .gallery .gallery_row .dbl {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.gallery_body_content .gallery .gallery_row img {
+  width: 100%;
+}
+.gallery_body_content .bottom_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  margin-top: 60px;
+}
+.gallery_body_content .bottom_nav .counts {
+  display: flex;
+  justify-content: space-between;
+}
+.gallery_body_content .bottom_nav .counts button {
+  height: 46px;
+  border: 1px solid #a8a8a8;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6px;
+  color: #a8a8a8;
+  font-size: 20px;
+}
+.gallery_body_content .bottom_nav .counts .active {
+  background-color: #15429b;
+  color: #FFFFFF;
+}
+.gallery_body_content .bottom_nav .counts .dots {
+  color: #6e6e6e;
+  font-family: "Open Sans";
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 3%;
+}
+.gallery_body_content .bottom_nav .arrow button {
+  width: 52px;
+  height: 46px;
+  background-color: #1c418d;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  border-radius: 0;
+  font-size: 20px;
+}
+.gallery_body_content .bottom_nav .arrow .disabled {
+  background-color: #a9a9a9;
 }
 
 @media (max-width: 1650px) {

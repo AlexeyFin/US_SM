@@ -260,7 +260,7 @@
             margin-top: 40px
             display: flex
             justify-content: flex-end
-            a
+            button
               text-decoration: none
               width: 30%
               height: 60px
@@ -276,5 +276,109 @@
               letter-spacing: 2.06px
               line-height: 20.69px
               text-transform: uppercase
-              //padding: 10px 15px
+.modal
+  .modal-dialog
+    max-width: 40%
+  .modal-content
+    background: linear-gradient(-95deg, #082652 0%, #1c418d 100%)
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    padding-top: 25px
+    position: relative
+    .close
+      position: absolute
+      top: 0
+      right: -7%
+
+    .modal-header
+      border: none
+      h3
+        color: #ffffff
+        font-size: 30px
+    .modal-body
+      width: 50%
+      padding: 0
+      margin-top: 30px
+      .input-group-prepend, .input-group-text
+        background-color: rgba(255, 255, 255, 0)
+        border: none
+      .input-group-prepend
+        border-bottom: 1px solid #FFFFFF
+      .form-input
+        border: none
+        background-color: rgba(255, 255, 255, 0)
+        border-bottom: 1px solid #FFFFFF
+        color: #ffffff
+        font-size: 24px
+        &:focus
+
+          box-shadow: none
+      input::-moz-placeholder
+        color: #FFFFFF
+      input::-webkit-input-placeholder
+        color: #FFFFFF
+      .userCommentLabel
+        display: flex
+        padding-left: 12px
+        align-items: center
+        img
+          width: 23px
+          height: 20px
+          margin-right: 15px
+        p
+          color: #ffffff
+          font-size: 24px
+          margin: 0
+      textarea
+        width: 100%
+        //height: 89px
+        box-shadow: inset 5px 5px 15px 1px rgba(0, 0, 0, 0.28)
+        border: 1px solid #ffffff
+        background-color: #e8e8e8 !important
+        border-radius: 0
+        margin-bottom: 90px
+      textarea::-moz-placeholder
+        font-size: 18px
+        font-style: italic
+      textarea::-webkit-input-placeholder
+        font-size: 18px
+        font-style: italic
+      button
+        width: 100%
+        height: 70px
+        background-color: #ffd7a4
+        color: #2c365a
+        font-size: 24px
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 0
+        margin-bottom: 20px
+    .modal-footer
+      border: none
+      width: 70%
+      p
+        width: 100%
+        text-align: center
+        font-family: "Gotham Pro"
+        font-size: 16px
+        color: #ffffff
+
+
+@media (max-width: 1650px)
+  .complexes_body
+    &_main
+      .sidebar
+        .accordion
+          .card
+            .card-header
+              h5
+                button
+                  font-size: 15px
+            .card-body
+              h6
+                font-size: 14px
+
 

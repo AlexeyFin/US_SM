@@ -63,7 +63,7 @@
                 <a class="nav-link" href="contacts.html">Контакты</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Галерея</a>
+                <a class="nav-link" href="gallery.html">Галерея</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -496,7 +496,7 @@
                     <div class="photo">
                         <img src="img/complexes/big_photo.png" alt="">
                         <div class="info">
-                            <a href="#">
+                            <button type="button" class="btn" data-toggle="modal" data-target="#formModal">
                                 <span>Узнать подробнее</span>
                                 <i class="fas fa-arrow-right"></i>
                         </div>
@@ -522,6 +522,60 @@
     </div>
     <div class="front">
         <img src="img/preloader/2-layers.png" alt="">
+    </div>
+</div>
+<div class="modal fade" id="formModal" tabindex="-1" role="dialog" >
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <img src="img/complexes/form/close.png" alt="">
+            </button>
+            <div class="modal-header">
+               <h3>Узнать подробнее</h3>
+
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><img src="img/complexes/form/face.png" alt=""></div>
+                            </div>
+                            <input required type="text" class="form-control form-input" id="userName" placeholder="Ваше имя">
+                        </div>
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><img src="img/complexes/form/phone.png" alt=""></div>
+                            </div>
+                            <input required type="text" class="form-control form-input" id="userPhone" placeholder="Ваш телефон">
+                        </div>
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><img src="img/complexes/form/letter.png" alt=""></div>
+                            </div>
+                            <input required type="email" class="form-control form-input" id="userEmail" placeholder="Email address">
+                        </div>
+                        <div class="form-group">
+                            <label class="userCommentLabel" for="userComment">
+                                <img src="img/complexes/form/comment.png" alt="">
+                                <p>Комментарий</p>
+                            </label>
+                            <textarea class="form-control" id="userComment" rows="3" placeholder="Введите сюда текст..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-block" type="submit">Отправить запрос</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <p>
+                    Задача организации, в особенности же сложившаяся структура организации
+                    способствует подготовки и реализации направлений прогрессивного развития.
+                </p>
+            </div>
+        </div>
     </div>
 </div>
 
