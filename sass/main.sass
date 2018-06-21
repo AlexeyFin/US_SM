@@ -39,6 +39,7 @@
     li
       border-right: 1px solid rgba(155, 155, 155, 0.24)
       border-bottom: 1px solid rgba(155, 155, 155, 0.24)
+      position: relative
       &:nth-child(1)
         border-left: 1px solid rgba(155, 155, 155, 0.24)
       a
@@ -48,6 +49,8 @@
         text-transform: uppercase
         letter-spacing: 0.83px
       &::after
+        position: absolute
+        bottom: 0
         display: block
         content: ''
         width: 100%
@@ -76,8 +79,6 @@
 .index_body
   padding-left: 70px
   height: 80%
-  .row
-    //min-height: 100%
   .logo
     margin-bottom: 25px
   .about
@@ -138,6 +139,8 @@
         letter-spacing: 2.06px
         font-size: 24px
         padding: 12px
+        border-radius: 0
+        transition: all .3s ease-in-out
     .nav-arrows
       display: block
     .nav-arrows a
@@ -169,8 +172,14 @@
       bottom: -10%
       span
         box-shadow: none
-      .nav-dot-current
+        width: 10px
+        height: 10px
+        transition: all .3s ease-in-out
+      span.nav-dot-current
         background-color: #2861aa
+        width: 12px
+        height: 12px
+
 
 .footer
   padding-right: 40px
@@ -250,12 +259,8 @@
       .nav-arrows a
         width: 42px
         height: 42px
-        font-size: 16px
-      .nav-dots
-        span
-          width: 12px
-          height: 12px
-  //    Complexes
+
+
 
 
 
