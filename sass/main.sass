@@ -40,8 +40,6 @@
       border-right: 1px solid rgba(155, 155, 155, 0.24)
       border-bottom: 1px solid rgba(155, 155, 155, 0.24)
       position: relative
-      &:nth-child(1)
-        border-left: 1px solid rgba(155, 155, 155, 0.24)
       a
         color: #474747
         font-family: "PF Handbook Pro"
@@ -66,6 +64,8 @@
         color: #2f598e
       &:after
         transform: scale(1)
+    .last
+      border-right: none
     .dropdown
       border-right: none
       a
@@ -104,14 +104,18 @@
       color: #878787
       font-size: 17px
       line-height: 24px
-    .toNew
-      a
-        color: #1d1d1d
-        font-family: "Bandera Pro"
-        font-weight: bold
-        line-height: 24px
-        font-size: 21px
-        text-decoration: underline
+  .toNew
+    padding-left: 30px
+    a
+      color: #1d1d1d
+      font-family: "Bandera Pro"
+      font-weight: bold
+      line-height: 24px
+      font-size: 21px
+      text-decoration: underline
+      transition: all .3s ease-in-out
+      &:hover
+        color: #215699
   .slider_block
     margin-top: -80px
     .sb-description
@@ -141,6 +145,8 @@
         padding: 12px
         border-radius: 0
         transition: all .3s ease-in-out
+        &:hover
+          background-color: #215699
     .nav-arrows
       display: block
     .nav-arrows a

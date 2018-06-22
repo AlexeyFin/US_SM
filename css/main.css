@@ -113,9 +113,6 @@
   border-bottom: 1px solid rgba(155, 155, 155, 0.24);
   position: relative;
 }
-.navbar .navbar-nav li:nth-child(1) {
-  border-left: 1px solid rgba(155, 155, 155, 0.24);
-}
 .navbar .navbar-nav li a {
   color: #474747;
   font-family: "PF Handbook Pro";
@@ -149,6 +146,9 @@
 .navbar .navbar-nav .active:after {
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+.navbar .navbar-nav .last {
+  border-right: none;
 }
 .navbar .navbar-nav .dropdown {
   border-right: none;
@@ -207,13 +207,21 @@
   font-size: 17px;
   line-height: 24px;
 }
-.index_body .about .toNew a {
+.index_body .toNew {
+  padding-left: 30px;
+}
+.index_body .toNew a {
   color: #1d1d1d;
   font-family: "Bandera Pro";
   font-weight: bold;
   line-height: 24px;
   font-size: 21px;
   text-decoration: underline;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.index_body .toNew a:hover {
+  color: #215699;
 }
 .index_body .slider_block {
   margin-top: -80px;
@@ -251,6 +259,9 @@
   border-radius: 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+.index_body .slider_block .sb-description a:hover {
+  background-color: #215699;
 }
 .index_body .slider_block .nav-arrows {
   display: block;
@@ -844,7 +855,7 @@
   color: #ffffff;
 }
 
-@media (max-width: 1650px) {
+@media screen and (max-width: 1650px) {
   .complexes_body_main .sidebar .accordion .card .card-header h5 button {
     font-size: 15px;
   }
